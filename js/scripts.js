@@ -9,17 +9,17 @@ $("document").ready(function(){
     var quizScore = learn + size + frontBackEnd + app + location
 
     if (quizScore < 7)  {
-      $("#ruby-rails").show();
+      $("#ruby-rails").slideDown();
       $("#css-react").hide();
       $("#cSharpNet").hide();
       $("form#questions").hide();
     } else if (quizScore < 9) {
-      $("#css-react").show();
+      $("#css-react").slideDown();
       $("#ruby-rails").hide();
       $("#cSharpNet").hide();
       $("form#questions").hide();
     } else {
-      $("#cSharpNet").show();
+      $("#cSharpNet").slideDown();
       $("#ruby-rails").hide();
       $("css-react").hide();
       $("form#questions").hide();
