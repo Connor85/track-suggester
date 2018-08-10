@@ -8,8 +8,21 @@ $("document").ready(function(){
 
     var quizScore = learn + size + frontBackEnd + app + location
 
-    if (quizScore === 5)  {
-      $("#results").show();
+    if (quizScore < 7)  {
+      $("#ruby-rails").show();
+      $("#css-react").hide();
+      $("#cSharpNet").hide();
+      $("form#questions").hide();
+    } else if (7 < quizScore < 9) {
+      $("#css-react").show();
+      $("#ruby-rails").hide();
+      $("#cSharpNet").hide();
+      $("form#questions").hide();
+    } else{
+      $("#cSharpNet").show();
+      $("#ruby-rails").hide();
+      $("css-react").hide();
+      $("form#questions").hide();
     }
 
     event.preventDefault();
