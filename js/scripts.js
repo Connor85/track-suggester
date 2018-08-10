@@ -13,12 +13,12 @@ $("document").ready(function(){
       $("#css-react").hide();
       $("#cSharpNet").hide();
       $("form#questions").hide();
-    } else if (7 < quizScore < 9) {
+    } else if (quizScore < 9) {
       $("#css-react").show();
       $("#ruby-rails").hide();
       $("#cSharpNet").hide();
       $("form#questions").hide();
-    } else{
+    } else {
       $("#cSharpNet").show();
       $("#ruby-rails").hide();
       $("css-react").hide();
