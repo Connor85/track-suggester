@@ -30,6 +30,10 @@ img {
 }
 
 body  {
-  background:  #9068be;
+  background:  #E6E6FA;
   margin-bottom: 30px;
+}
+
+.jumbotron  {
+  border: 1px solid darkgrey;
 }
